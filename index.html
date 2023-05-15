@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello from Electron renderer!</title>
+  </head>
+  <body>
+    <script>
+      async function crashMe() {
+        const response = await fetch("https://www.toptal.com/developers/postbin/1683982419168-3643908705562", {
+          method: "POST", 
+          body: Buffer.alloc(2 * 1000 * 1000).toString('hex'),
+        });
+      }
+    </script>
+    <h1>Hello from Electron renderer!</h1>
+    <button onclick="crashMe()">Crash me</button>
+  </body>
+</html>

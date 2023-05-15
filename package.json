@@ -1,0 +1,15 @@
+{
+  "name": "electron-repro-crash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "ELECTRON_ENABLE_LOGGING=true electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "23.3.2"
+  }
+}
